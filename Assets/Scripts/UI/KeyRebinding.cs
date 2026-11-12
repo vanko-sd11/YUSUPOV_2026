@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 public class KeyRebinding : MonoBehaviour
 {
-    [SerializeField] private PlayerController _playerController;
+    [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private TMP_Text _buttonText;
     [SerializeField] private string _actionName;
     [SerializeField] private int _bindingIndex;
@@ -18,7 +18,7 @@ public class KeyRebinding : MonoBehaviour
 
     public void StartRebinding()
     {
-        InputAction action = _playerController.GetAction(_actionName);
+        InputAction action = _playerInput.GetAction(_actionName);
 
         _buttonText.text = "Нажмите на клавишу ";
         action.Disable();
@@ -28,7 +28,7 @@ public class KeyRebinding : MonoBehaviour
             action.Enable();
             UpdateButtonText();
 
-            _playerController.SaveKeyBindings();
+            _playerInput.SaveKeyBindings();
 
             operation.Dispose();
         }).OnCancel(operation =>
@@ -44,7 +44,7 @@ public class KeyRebinding : MonoBehaviour
     }
     private void UpdateButtonText()
     {
-        InputAction action = _playerController.GetAction(_actionName);
+        InputAction action = _playerInput.GetAction(_actionName);
 
         if (action != null)
         {

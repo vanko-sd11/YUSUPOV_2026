@@ -268,9 +268,6 @@ PrefabInstance:
       addedObject: {fileID: 6375444618590382808}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1c57bc3d97646084888294e2f36ca46f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 9126782507922668526}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1c57bc3d97646084888294e2f36ca46f, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5152436672846988376}
   m_SourcePrefab: {fileID: 100100000, guid: 1c57bc3d97646084888294e2f36ca46f, type: 3}
 --- !u!1 &1376964905730410612 stripped
@@ -303,30 +300,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1.65, z: 0}
---- !u!114 &9126782507922668526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1376964905730410612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79b869cf87937cc459ced9776f686af6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  _characterCotroller: {fileID: 6375444618590382808}
-  _speed: 5
-  _camera: {fileID: 1224203265766686589}
-  _craftPanel: {fileID: 0}
-  _rotationSpeed: 80
-  _zoomSpeed: 2
-  _minZoom: 2
-  _maxZoom: 10
-  _interactionDistance: 3
-  _pickupRadius: 3
-  _dataStorage: {fileID: 0}
-  _animator: {fileID: 5152436672846988376}
 --- !u!95 &5152436672846988376
 Animator:
   serializedVersion: 7

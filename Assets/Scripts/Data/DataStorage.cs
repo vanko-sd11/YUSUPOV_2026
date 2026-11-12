@@ -11,7 +11,7 @@ public class DataStorage : MonoBehaviour
     private string PlayerPath => Path.Combine(FolderPath, "player.json");
     private string KeyBindingsPath => Path.Combine(FolderPath, "keybndings.json");
 
-    public void SettingsSave(GameSettings settings)
+    public void SaveSettings(GameSettings settings)
     {
         try
         {
