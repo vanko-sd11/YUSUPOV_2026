@@ -1,0 +1,4 @@
+repository "YUSUPOV_2026/YUSUPOV_2026@10171545801496@cloud"
+  path "/"
+    br "/main"
+    co "/main"
